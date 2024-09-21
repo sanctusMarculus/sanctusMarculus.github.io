@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A cyberpunk-themed portfolio highlighting blockchain and DeFi expertise.">
+    <title>Eren Tokmak - Blockchain Engineer</title>
+
+    <!-- Linking External Fonts and Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="assets/audio/synthwave.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/videos/vid.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section id="about-me" class="section about-section">
+            <div class="about-content">
+                <div class="avatar-container">
+                    <img src="assets/images/avatar.gif" alt="Avatar" class="avatar">
+                    <div class="crazy-text">THEY CALL ME MAD MAN</div>
+                </div>
+                <div class="about-text">
+                    <h1 class="name">Eren Tokmak</h1>
+                    <p class="about-description">
+                        Skilled Blockchain Engineer with extensive experience in MEV and DeFi
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <h1 class="section-title neon-text">Experience</h1>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <h2>Blockchain Developer Chainews (2024)</h2>
+                    <p>Led the development of a decentralized news platform, implemented DAO governance, and slashing mechanisms for validation.</p>
+                </div>
+                <div class="experience-item">
+                    <h2>Blockchain Researcher Forge³ (2023)</h2>
+                    <p>Conducted audits on DeFi systems and created reports for companies with high-volume daily transactions.</p>
+                </div>
+                <div class="experience-item">
+                    <h2>MEV Engineer/Searcher (2021)</h2>
+                    <p>Designed and implemented advanced MEV strategies, developing high-performance systems using robust tech stack.</p>
+                    <p class="mev-power-line">"MEV is the power to manipulate time, turning fleeting moments into unstoppable profit."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h1 class="section-title neon-text">Skills</h1>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <strong>Languages:</strong> C/C++, Python, JavaScript, Solidity, Go, Rust
+                </div>
+                <div class="skill-item">
+                    <strong>Frameworks and Libraries:</strong> web3.py, Brownie, Node.js, web3.js, ethers.js, Hardhat, Geth, RabbitMQ
+                </div>
+                <div class="skill-item">
+                    <strong>Blockchain Technologies:</strong> dApps, DAOs, DeFi, Layer 0/1/2 Solutions, zkPs, Rollups, State Channels, Tokenomics, Tokenization
+                </div>
+                <div class="skill-item">
+                    <strong>Networking and Protocols:</strong> p2p, Gossip Protocols, Whisper, Websockets, HTTP, JSON-RPC
+                </div>
+                <div class="skill-item">
+                    <strong>Consensus Mechanisms:</strong> PoW, PoS, DPoS, BFTs
+                </div>
+                <div class="skill-item">
+                    <strong>Node Management:</strong> Node Deployment and Management, Custom Node Software Modifications, Performance Tuning, Network Configuration
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section portfolio-section">
+            <h1 class="section-title neon-text">Portfolio</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h2>Automated ERC20 Token Auditor - Advanced Honeypot Analyzer</h2>
+                    <p>Developed a high-precision tool for auditing ERC20 tokens, using static analysis, regex algorithms, transaction simulations, and pattern recognition. Unlike current market tools, which fail to accurately consider upgradable contract behavior or obfuscated malicious pausable actions in honeypot schemes, this tool achieves nearly 90% accurate predictions, even including these metrics, in near token creation time.</p>
+                    <p><strong>Technologies:</strong> Solidity, JavaScript</p>
+                </div>
+                <div class="portfolio-item">
+                    <h2>Private Transaction Detector</h2>
+                    <p>Developed an advanced tool to detect and analyze private transactions on EVM-compatible networks. This pioneering solution fills a market void, offering unique insights into private transaction data, enhancing blockchain security, and advancing DeFi research. Provided empirical insights into the usage of tools like FlashBots and bloXroute on the networks.</p>
+                    <p><strong>Basic Version Demo:</strong> <a href="https://github.com/sanctusMarculus/MEV-Protected-Transaction-Detector" target="_blank">github.com/sanctusMarculus/MEV-Protected-Transaction-Detector</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mev" class="section mev-section">
+            <h1 class="section-title neon-text">MEV Expertise</h1>
+            <div class="mev-content">
+                <p>
+                    In the ever-evolving landscape of decentralized finance, MEV (Maximal Extractable Value) isn't just a concept I work with—it's the terrain I’ve mastered. MEV is a dynamic arena where <span class="highlight">mechanism design</span>, <span class="highlight">game theory</span>, and high-frequency trading (<span class="highlight">HFT</span>) converge, and my approach is built on exploiting every inefficiency with surgical precision. As a seasoned architect of advanced MEV strategies, I’ve developed systems that not only identify vulnerabilities in real-time but preemptively shape market outcomes before they materialize. From <span class="highlight">sandwich attacks</span> to front-running and back-running, I capitalize on split-second opportunities to turn volatility into a tactical advantage.
+                </p>
+                <p>
+                    I’ve designed and engineered a platform that directly tackles the most pressing challenges in DeFi for <span class="highlight">MEV searchers</span>, <span class="highlight">HFT traders</span>, and institutional players who require unparalleled speed and accuracy. One of the cornerstones of this platform is the <span class="highlight">honeypot detection system</span> I built to operate within the mempool—long before transactions reach the blockchain. Rather than relying on post-deployment analysis, my system continuously scrapes the mempool, analyzing contract bytecode <span class="highlight">before deployment</span>. By integrating <span class="highlight">static and dynamic bytecode analysis</span>, I identify honeypots in their early stages, providing our users with a decisive edge in an environment where milliseconds matter.
+                </p>
+                <p>
+                    What sets this system apart is the <span class="highlight">risk-scoring mechanism</span> I created, which identifies malicious patterns invisible to traditional tools. It’s fully customizable to meet the strategic needs of private frameworks, integrating seamlessly via WebSocket and API feeds for real-time, actionable insights. By leveraging <span class="highlight">protected RPCs</span> and tracking <span class="highlight">private transactions</span>, I ensure comprehensive analysis even when market data is obfuscated, delivering full transparency in the most hidden corners of DeFi.
+                </p>
+                <p>
+                    Beyond mempool monitoring, I have developed a robust simulation system that goes deeper—predicting contract behavior <span class="highlight">before deployment</span>. This system offers detailed insights into <span class="highlight">liquidity lock-ins</span>, <span class="highlight">rug pulls</span>, and <span class="highlight">ownership transitions</span> that aren’t apparent from surface-level analysis. I implemented <span class="highlight">advanced pattern recognition algorithms</span> to track the historical activities of token creators, enabling the system to anticipate <span class="highlight">scam behaviors</span> and malicious patterns long before they can impact the market. Built with high-frequency use cases in mind, this system is optimized for <span class="highlight">private strategies</span>, ensuring that both latency and predictive accuracy are unmatched.
+                </p>
+                <p>
+                    To complement this, I developed a private <span class="highlight">middleware system</span> for <span class="highlight">node aggregation</span>, designed specifically to handle <span class="highlight">low-latency, high-performance environments</span>. By aggregating data from multiple private nodes, my middleware offers real-time insights and full visibility into the mempool, while running complex, proprietary queries like <span class="highlight">pre-deployment honeypot detection</span> and <span class="highlight">rug pull prediction</span>. This infrastructure is critical for integrating <span class="highlight">private transaction mapping</span> and ensuring even the most concealed transactions are part of the risk analysis.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>
+            <a href="mailto:erentokmak00@gmail.com" class="contact-link">erentokmak00@gmail.com</a> - 
+            <a href="https://linkedin.com/in/eren-tokmak/" target="_blank" class="contact-link">LinkedIn</a> - 
+            <a href="https://github.com/sanctusMarculus" target="_blank" class="contact-link">GitHub</a>
+        </p>
+
+        <!-- Music Control Button -->
+        <div class="music-control-container">
+            <button id="music-control" class="music-control">Techno On</button>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
