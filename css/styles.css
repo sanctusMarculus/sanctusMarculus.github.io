@@ -234,7 +234,7 @@ body {
 .mev-section .section-title {
     font-size: 2.5rem;
     color: #0abde3;
-    text-shadow: 0 0 10px #0abde3, 0 0 30px #00ffff;
+    text-shadow: 0 0 2x #0abde3, 0 0 4px #00ffff;
     margin-bottom: 40px;
 }
 
