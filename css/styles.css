@@ -30,7 +30,7 @@ body {
     opacity: 0.8; /* Optional: adjust opacity */
 }
 
-
+/* Container Styling */
 .container {
     color: rgba(0, 0, 0, 0);
     z-index: 1;
@@ -65,17 +65,6 @@ body {
     height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
-}
-
-.crazy-text {
-    font-family: 'Creepster', cursive; /* Crazy font */
-    font-size: 1.5rem;
-    color: #ff6b6b;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff3f3f;
-    transform: rotate(-10deg); /* Tilt for extra craziness */
 }
 
 .name {
@@ -148,7 +137,6 @@ body {
     box-shadow: 0 0 10px #0abde3;
 }
 
-
 /* Portfolio Section */
 .portfolio-section {
     background-color: rgba(0, 0, 0, 0);
@@ -181,14 +169,13 @@ body {
     line-height: 1.6;
 }
 
-/* Neon Text */
+/* Neon Text for Headings */
 .neon-text {
     font-size: 2.5rem;
     color: #0abde3;
     text-shadow: 0 0 10px #0abde3, 0 0 30px #00ffff;
     margin-bottom: 40px;
 }
-
 
 /* MEV Power Line */
 .mev-power-line {
@@ -239,17 +226,16 @@ body {
     margin-bottom: 40px;
 }
 
-
 /* Footer Section */
 .footer {
     display: flex;
     justify-content: space-evenly; /* Aligns content: text on the left, button on the right */
-    align-items: center;            /* Vertically centers the content */
+    align-items: center; /* Vertically centers the content */
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 10px 20px;             /* Adjust padding for spacing */
+    padding: 10px 20px;
     z-index: 2; /* Ensure it's above the video */
 }
 
@@ -273,14 +259,13 @@ body {
 /* Music Control Button Styling */
 .music-control-container {
     display: flex;
-    justify-content: flex /* Align the button to the right within the footer */
-    flex: 1; /* Make this take the remaining space in the footer */
+    margin-left: auto; /* Align the button to the right within the footer */
 }
 
 .music-control {
     font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
     background-color: #ff66cc; /* Initial background color */
-    color: #000;               /* Initial text color */
+    color: #000; /* Initial text color */
     font-size: 0.8rem;
     padding: 10px 20px;
     border: none;
@@ -298,5 +283,25 @@ body {
 /* Invert colors on click */
 .music-control:active {
     background-color: #000; /* Inverted background color */
-    color: #0abde3;         /* Inverted text color */
+    color: #0abde3; /* Inverted text color */
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .avatar {
+        width: 200px; /* Smaller avatar for mobile */
+    }
+
+    .section {
+        padding: 30px 10px; /* Reduce padding for mobile sections */
+    }
+
+    .footer p {
+        font-size: 0.6rem; /* Smaller font size in footer */
+    }
+
+    .music-control {
+        font-size: 0.7rem; /* Smaller button text for mobile */
+        padding: 8px 15px; /* Adjust button size for mobile */
+    }
 }
