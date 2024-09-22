@@ -186,6 +186,9 @@ body {
         .name {
             text-shadow: 0 0 1px #0abde3, 0 0 2px #00ffff;
         }
+        .mev-section .section-title{
+            text-shadow: 0 0 1px #0abde3, 0 0 2px #00ffff;
+        }
     }
 }
 
