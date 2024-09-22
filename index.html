@@ -17,11 +17,8 @@
         <source src="assets/audio/synthwave.mp3" type="audio/mpeg">
     </audio>
 
-    <!-- Overlay -->
-    <div class="overlay"></div>
-
     <!-- Background Video -->
-    <video autoplay muted loop id="bg-video">
+    <video autoplay muted playsinline loop id="bg-video">
         <source src="assets/videos/vid.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
@@ -34,13 +31,10 @@
             <div class="about-content">
                 <div class="avatar-container">
                     <img src="assets/images/avatar.gif" alt="Avatar" class="avatar">
-                    <div class="crazy-text"></div>
                 </div>
                 <div class="about-text">
                     <h1 class="name">Eren Tokmak</h1>
-                    <p class="about-description">
-                        Skilled Blockchain Engineer with extensive experience in MEV and DeFi
-                    </p>
+                    <p class="about-description">Skilled Blockchain Engineer with extensive experience in MEV and DeFi</p>
                 </div>
             </div>
         </section>
@@ -69,24 +63,12 @@
         <section id="skills" class="section skills-section">
             <h1 class="section-title neon-text">Skills</h1>
             <div class="skills-grid">
-                <div class="skill-item">
-                    <strong>Languages:</strong> C/C++, Python, JavaScript, Solidity, Go, Rust
-                </div>
-                <div class="skill-item">
-                    <strong>Frameworks and Libraries:</strong> web3.py, Brownie, Node.js, web3.js, ethers.js, Hardhat, Geth, RabbitMQ
-                </div>
-                <div class="skill-item">
-                    <strong>Blockchain Technologies:</strong> dApps, DAOs, DeFi, Layer 0/1/2 Solutions, zkPs, Rollups, State Channels, Tokenomics, Tokenization
-                </div>
-                <div class="skill-item">
-                    <strong>Networking and Protocols:</strong> p2p, Gossip Protocols, Whisper, Websockets, HTTP, JSON-RPC
-                </div>
-                <div class="skill-item">
-                    <strong>Consensus Mechanisms:</strong> PoW, PoS, DPoS, BFTs
-                </div>
-                <div class="skill-item">
-                    <strong>Node Management:</strong> Node Deployment and Management, Custom Node Software Modifications, Performance Tuning, Network Configuration
-                </div>
+                <div class="skill-item"><strong>Languages:</strong> C/C++, Python, JavaScript, Solidity, Go, Rust</div>
+                <div class="skill-item"><strong>Frameworks and Libraries:</strong> web3.py, Brownie, Node.js, web3.js, ethers.js, Hardhat, Geth, RabbitMQ</div>
+                <div class="skill-item"><strong>Blockchain Technologies:</strong> dApps, DAOs, DeFi, Layer 0/1/2 Solutions, zkPs, Rollups, State Channels, Tokenomics, Tokenization</div>
+                <div class="skill-item"><strong>Networking and Protocols:</strong> p2p, Gossip Protocols, Whisper, Websockets, HTTP, JSON-RPC</div>
+                <div class="skill-item"><strong>Consensus Mechanisms:</strong> PoW, PoS, DPoS, BFTs</div>
+                <div class="skill-item"><strong>Node Management:</strong> Node Deployment and Management, Custom Node Software Modifications, Performance Tuning, Network Configuration</div>
             </div>
         </section>
 
@@ -96,17 +78,18 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <h2>Automated ERC20 Token Auditor - Advanced Honeypot Analyzer</h2>
-                    <p>Developed a high-precision tool for auditing ERC20 tokens, using static analysis, regex algorithms, transaction simulations, and pattern recognition. Unlike current market tools, which fail to accurately consider upgradable contract behavior or obfuscated malicious pausable actions in honeypot schemes, this tool achieves nearly 90% accurate predictions, even including these metrics, in near token creation time.</p>
+                    <p>Developed a high-precision tool for auditing ERC20 tokens, using static analysis, regex algorithms, transaction simulations, and pattern recognition. This tool achieves nearly 90% accurate predictions even in near token creation time.</p>
                     <p><strong>Technologies:</strong> Solidity, JavaScript</p>
                 </div>
                 <div class="portfolio-item">
                     <h2>Private Transaction Detector</h2>
-                    <p>Developed an advanced tool to detect and analyze private transactions on EVM-compatible networks. This pioneering solution fills a market void, offering unique insights into private transaction data, enhancing blockchain security, and advancing DeFi research. Provided empirical insights into the usage of tools like FlashBots and bloXroute on the networks.</p>
+                    <p>Developed an advanced tool to detect and analyze private transactions on EVM-compatible networks. It offers unique insights into private transaction data, enhancing blockchain security and advancing DeFi research.</p>
                     <p><strong>Basic Version Demo:</strong> <a href="https://github.com/sanctusMarculus/MEV-Protected-Transaction-Detector" target="_blank">github.com/sanctusMarculus/MEV-Protected-Transaction-Detector</a></p>
                 </div>
             </div>
         </section>
 
+        <!-- MEV Expertise Section -->
         <section id="mev" class="section mev-section">
             <h1 class="section-title neon-text">MEV Expertise</h1>
             <div class="mev-content">
@@ -141,7 +124,6 @@
             <button id="music-control" class="music-control">Techno On</button>
         </div>
     </footer>
-
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
