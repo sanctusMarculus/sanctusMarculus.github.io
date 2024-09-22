@@ -178,6 +178,16 @@ body {
     margin-bottom: 40px;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .neon-text {
+            text-shadow: 0 0 1px #0abde3, 0 0 2px #00ffff; /* Reduced glow in Safari */
+        }
+        .name {
+            text-shadow: 0 0 1px #0abde3, 0 0 2px #00ffff;
+        }
+    }
+}
 
 /* MEV Power Line */
 .mev-power-line {
