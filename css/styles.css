@@ -8,24 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Neon Text (General Styling) */
-.neon-text {
-    font-size: 2.5rem;
-    color: #0abde3;
-    text-shadow: 0 0 5px #0abde3, 0 0 15px #00ffff;
-    margin-bottom: 40px;
-}
-
-/* Safari-Specific Neon Text Adjustment */
-@media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance:none) {
-        .neon-text {
-            text-shadow: 0 0 3px #0abde3, 0 0 10px #00ffff; /* Reduced glow in Safari */
-        }
-    }
-}
-
-
 /* Make sections transparent */
 .section {
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
@@ -85,22 +67,11 @@ body {
     margin-bottom: 20px;
 }
 
-.crazy-text {
-    font-family: 'Creepster', cursive; /* Crazy font */
-    font-size: 1.5rem;
-    color: #ff6b6b;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff3f3f;
-    transform: rotate(-10deg); /* Tilt for extra craziness */
-}
-
 .name {
     font-size: 2.5rem;
     color: #0abde3;
     margin: 10px 0;
-    text-shadow: 0 0 10px #0abde3, 0 0 30px #00ffff;
+    text-shadow: 0 0 2px #0abde3, 0 0 5px #00ffff;
 }
 
 .about-description {
@@ -203,7 +174,7 @@ body {
 .neon-text {
     font-size: 2.5rem;
     color: #0abde3;
-    text-shadow: 0 0 10px #0abde3, 0 0 30px #00ffff;
+    text-shadow: 0 0 2px #0abde3, 0 0 5px #00ffff;
     margin-bottom: 40px;
 }
 
